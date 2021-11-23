@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gomeet Business & Meetup</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="responsive.css"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-header">
+                        <div class="nav-inner">
+                            <nav class="navbar">
+                                <a class="navbar-logo">
+                                    <img src="logo.svg">
+                                </a>
+                                <div class="sub-menu-bar">
+                                    <ul class="nav-menu">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="">Home<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                            <ul class="sub-menu">
+                                                <li class="nav-item2 active"><a href="#">Home</a></li>
+                                                <li class="nav-item2"><a href="#">Home2</a></li>
+                                                <li class="nav-item2"><a href="#">Home3</a></li>
+                                                <li class="nav-item2"><a href="#">Home4</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="">Services<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                            <ul class="sub-menu">
+                                                <li class="nav-item2"><a href="#">Services</a></li>
+                                                <li class="nav-item2"><a href="#">Service Detail</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="">Portfolio<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                            <ul class="sub-menu">
+                                                <li class="nav-item2"><a href="#">Portfolio</a></li>
+                                                <li class="nav-item2"><a href="#">Portfolio Detail</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Pages<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                            <ul class="sub-menu">
+                                                <li class="nav-item2"><a href="#">About Us</a></li>
+                                                <li class="nav-item2"><a href="#">Pricing</a></li>
+                                                <li class="nav-item2"><a href="#">Faq</a></li>
+                                                <li class="nav-item2"><a href="#">Login</a></li>
+                                                <li class="nav-item2"><a href="#">Registration</a></li>
+                                                <li class="nav-item2"><a href="#">404 Error</a></li>
+                                                <li class="nav-item2"><a href="#">Mail Success</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#blog">Blog<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                            <ul class="sub-menu">
+                                                <li class="nav-item2"><a href="#">Blog Grid Sidebar</a></li>
+                                                <li class="nav-item2"><a href="#">Blog Single</a></li>
+                                                <li class="nav-item2"><a href="#">Blog Single Sibebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-menu2" onclick="myFunction(this)">
+                                    <div class="bar1"></div>
+                                    <div class="bar2"></div>
+                                    <div class="bar3"></div>
+                                </div>
+                                <div class="main-nav">
+                                    <ul>
+                                        <li class="mnav-item">
+                                            <a href="javascript:void(0)" class="dropdown-btn">Home<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                            <ul class="dropdown-container">
+                                                <li class="mnav-item2 dactive"><a href="#">Home1</a></li>
+                                                <li class="mnav-item2"><a href="#">Home2</a></li>
+                                                <li class="mnav-item2"><a href="#">Home3</a></li>
+                                                <li class="mnav-item2"><a href="#">Home4</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mnav-item">
+                                            <a href="javascript:void(0)" class="dropdown-btn">Services<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                            <ul class="dropdown-container">
+                                                <li class="mnav-item2"><a href="#">Services</a>
+                                                </li>
+                                                <li class="mnav-item2"><a href="#">Service Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mnav-item">
+                                            <a href="javascript:void(0)" class="dropdown-btn">Portfolio<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                            <ul class="dropdown-container">
+                                                <li class="mnav-item2"><a href="#">Portfolio</a>
+                                                </li>
+                                                <li class="mnav-item2"><a href="#">Portfolio Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mnav-item">
+                                            <a href="javascript:void(0)" class="dropdown-btn">Pages<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                            <ul class="dropdown-container">
+                                                <li class="mnav-item2"><a href="#">About Us</a></li>
+                                                <li class="mnav-item2"><a href="#">Pricing</a></li>
+                                                <li class="mnav-item2"><a href="#">Faq</a></li>
+                                                <li class="mnav-item2"><a href="#">Login</a></li>
+                                                <li class="mnav-item2"><a href="#">Registration</a></li>
+                                                <li class="mnav-item2"><a href="#">404 Error</a></li>
+                                                <li class="mnav-item2"><a href="#">Mail Success</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mnav-item">
+                                            <a href="#blog" class="dropdown-btn">Blog<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                            <ul class="dropdown-container">
+                                                <li class="mnav-item2"><a href="#">Blog Grid Sidebar</a></li>
+                                                <li class="mnav-item2"><a href="#">Blog Single</a></li>
+                                                <li class="mnav-item2"><a href="#">Blog Single Sibebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mnav-item">
+                                            <a href="#">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="add-list-button">
+                                    <a href="#" class="list-button">Get started free</a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-hero">
+                        <div class="hero-image">
+                            <img src="hero-image.png" alt="#">
+                        </div>
+                    </div>
+                    <div class="col-hero col-hero">
+                        <div class="hero-content">
+                            <h1>Get things done by great remote team</h1>
+                            <p>We share common trends and strategies for
+                                improving your rental income and making sure you stay in high demand.</p>
+                            <form action="#" method="get" target="" class="trial-form">
+                                <input name="email" type="email" placeholder="Your email address">
+                                <div class="hero-button">
+                                    <button type="button" class="hero-btn">Get Started</button>
+                                </div>
+                            </form>
+                            <a href="video.mp4" class="video-button"><i class="fa fa-play" aria-hidden="true"></i><span class="video-text">Watch our intro video.</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="client-logo-section">
+            <div class="container">
+                <div class="client-wrapper">
+                    <div class="logo-section">
+                        <div class="client-logo">
+                            <img src="client-logo-1.svg" alt="#">
+                        </div>
+                        <div class="client-logo">
+                            <img src="client-logo-2.svg" alt="#">
+                        </div>
+                        <div class="client-logo">
+                            <img src="client-logo-3.svg" alt="#">
+                        </div>
+                        <div class="client-logo">
+                            <img src="client-logo-4.svg" alt="#">
+                        </div>
+                        <div class="client-logo">
+                            <img src="client-logo-5.svg" alt="#">
+                        </div>
+                        <div class="client-logo">
+                            <img src="client-logo-3.svg" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-services">
+                        <div class="section-title">
+                            <h3>Services</h3>
+                            <h2>What we offer</h2>
+                            <p>There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered alteration in some form.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-card">
+                    <div class="row">
+                        <div class="col-card">
+                            <div class="single-service">
+                                <span class="serial">01</span>
+                                <h3><a href="#">Digital Product Development</a></h3>
+                                <p>We dejoy working with discerning clients, people for whom qualuty, service, integrity &
+                                    aesthetics.</p>
+                                <div class="sbutton">
+                                    <a href="#" class="s-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-card">
+                            <div class="single-service">
+                                <span class="serial">02</span>
+                                <h3><a href="#">General Consulting Process</a></h3>
+                                <p>We dejoy working with discerning clients, people for whom qualuty, service, integrity &
+                                    aesthetics.</p>
+                                <div class="sbutton">
+                                    <a href="#" class="s-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-card">
+                            <div class="single-service  " data--delay=".6s">
+                                <span class="serial">03</span>
+                                <h3><a href="#">Web Design & development solutions</a></h3>
+                                <p>We dejoy working with discerning clients, people for whom qualuty, service, integrity &
+                                    aesthetics.</p>
+                                    <div class="sbutton">
+                                        <a href="#" class="s-btn">Read More</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-card">
+                            <div class="single-service  " data--delay=".2s">
+                                <span class="serial">04</span>
+                                <h3><a href="#">Marketing Solutions</a></h3>
+                                <p>We dejoy working with discerning clients, people for whom qualuty, service, integrity &
+                                    aesthetics.</p>
+                                    <div class="sbutton">
+                                        <a href="#" class="s-btn">Read More</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-card">
+                            <div class="single-service  " data--delay=".4s">
+                                <span class="serial">05</span>
+                                <h3><a href="#">Business Analytics</a></h3>
+                                <p>We dejoy working with discerning clients, people for whom qualuty, service, integrity &
+                                    aesthetics.</p>
+                                    <div class="sbutton">
+                                        <a href="#" class="s-btn">Read More</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-card">
+                            <div class="single-service  " data--delay=".6s">
+                                <span class="serial">06</span>
+                                <h3><a href="#">UX & UI Design</a></h3>
+                                <p>We dejoy working with discerning clients, people for whom qualuty, service, integrity &
+                                    aesthetics.</p>
+                                    <div class="sbutton">
+                                        <a href="#" class="s-btn">Read More</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-about">
+                        <div class="about-content">
+                            <div class="about-heading">
+                                <h2>People choose us because of our service</h2>
+                                <p>McKinsey research has shown that 70% of buying experiences are based on how the customer
+                                    feels they have been treated.</p>
+                            </div>
+                            <div class="about-list">
+                                <div class="absingle-list">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    <h4>Infinite Features</h4>
+                                    <p>We work on diverse projects for top brands as well as for cool startups.</p>
+                                </div>
+                                <div class="absingle-list">
+                                    <i class="fa fa-th-large" aria-hidden="true"></i>
+                                    <h4>Stunning Design</h4>
+                                    <p>We work on diverse projects for top brands as well as for cool startups.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-about">
+                        <div class="about-image">
+                            <img class="abmain-image" src="about-image.png" alt="#">
+                            <div class="img2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-achievement">
+            <div class="container">
+                <div class="row">
+                    <div class="col-achievement">
+                        <div class="single-achievement">
+                            <div class="achievement-icon">
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="counter"><span id="secondo1" class="countup" cup-end="100">100</span>%</h3>
+                            <p>Satisfaction</p>
+                        </div>
+                    </div>
+                    <div class="col-achievement">
+                        <div class="single-achievement">
+                            <div class="achievement-icon">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="counter"><span id="secondo2" class="countup" cup-end="120">120</span>K</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                    <div class="col-achievement">
+                        <div class="single-achievement">
+                            <div class="achievement-icon">
+                                <i class="fa fa-btc" aria-hidden="true"></i><i class="lni lni-investment"></i>
+                            </div>
+                            <h3 class="counter"><span id="secondo3" class="countup" cup-end="500">500</span>k+</h3>
+                            <p>Investments</p>
+                        </div>
+                    </div>
+                    <div class="col-achievement">
+                        <div class="single-achievement">
+                            <div class="achievement-icon">
+                                <i class="fa fa-trophy" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="counter"><span id="secondo3" class="countup" cup-end="50">50</span>+</h3>
+                            <p>Winning Award</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-section">
+                        <div class="psection-title">
+                            <h3>Latest Cases</h3>
+                            <h2>Our Latest works</h2>
+                            <p>There are many variations of passages of Lorem
+                                Ipsum available,  <br>but the majority have suffered alteration in some form.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-section2">
+                        <div class="pbutton-head">
+                            <div class="pbtn-wrapper">
+                                <button class="portfolio-btn pactive">All</button>
+                                <button class="portfolio-btn">Branding</button>
+                                <button class="portfolio-btn">Marketing</button>
+                                <button class="portfolio-btn">Web Design</button>
+                                <button class="portfolio-btn">Graphic Design</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pgrid">
+                    <div class="grid-marketing">
+                        <div class="pitem-wrapper">
+                            <div class="portfolio-img">
+                                <a href="#"><img class="pimg" src="pf1.png" alt="#"></a>
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="pf-content1">
+                                    <span class="category">Graphic Design</span>
+                                    <h4><a href="#">Aura Branding Design</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-marketing">
+                        <div class="pitem-wrapper">
+                            <div class="portfolio-img">
+                                <a href="#"><img class="pimg" src="pf2.png" alt="#"></a>
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="pf-content">
+                                    <span class="category">Graphic Design</span>
+                                    <h4><a href="#">Best Graphic Design in 2023</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-marketing">
+                        <div class="pitem-wrapper">
+                            <div class="portfolio-img">
+                                <a href="#"><img class="pimg" src="pf3.png" alt="#"></a>
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="pf-content">
+                                    <span class="category">Marketing</span>
+                                    <h4><a href="#">Unique Marketing tips & tricks</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-marketing">
+                        <div class="pitem-wrapper">
+                            <div class="portfolio-img">
+                                <a href="#"><img class="pimg" src="pf4.png" alt="#"></a>
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="pf-content">
+                                    <span class="category">Web Design</span>
+                                    <h4><a href="#">Best Web Design in 2023</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-marketing">
+                        <div class="pitem-wrapper">
+                            <div class="portfolio-img">
+                                <a href="#"><img class="pimg" src="pf5.png" alt="#"></a>
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="pf-content">
+                                    <span class="category">Branding</span>
+                                    <h4><a href="#">Best Branding Solutions </a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-marketing">
+                        <div class="pitem-wrapper">
+                            <div class="portfolio-img">
+                                <a href="#"><img class="pimg" src="pf6.png" alt="#"></a>
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="pf-content">
+                                    <span class="category">Web Design</span>
+                                    <h4><a href="#">Best Web Design in 2023</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-pbutton">
+                        <div class="pbutton">
+                            <a href="portfolio.html" class="pbtn">See all works</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pricing" class="pricing-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-pricing">
+                        <div class="pricing-title">
+                            <h3>pricing</h3>
+                            <h2>Pricing Plan</h2>
+                            <p>There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered alteration in some form.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-ptable">
+                        <div class="single-ptable">
+                            <div class="ptable-head">
+                                <h4>Freelancer</h4>
+                                <p>All the basics for starting a new business</p>
+                                <div class="p-price">
+                                    <h2 class="p-amount">$24<span class="p-duration">/mo</span></h2>
+                                </div>
+                            </div>
+                            <div class="ptable-content">
+                                <ul class="ptable-list">
+                                    <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Cras justo odio.</li>
+                                    <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Dapibus ac facilisis in.</li>
+                                    <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Morbi leo risus.</li>
+                                    <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Potenti felis, in cras ligula.</li>
+                                </ul>
+                                <div class="p-button">
+                                    <a href="#" class="p-btn">Buy Freelancer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-ptable">
+                        <div class="single-ptable">
+                            <div class="ptable-head">
+                                <h4>Startup</h4>
+                                <p>All the basics for starting a new business</p>
+                                <div class="p-price">
+                                    <h2 class="p-amount">$32<span class="p-duration">/mo</span></h2>
+                                </div>
+                            </div>
+                            <div class="ptable-content">
+                                <ul class="ptable-list">
+                                    <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Cras justo odio.</li>
+                                    <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Dapibus ac facilisis in.</li>
+                                    <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Morbi leo risus.</li>
+                                    <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Potenti felis, in cras ligula.</li>
+                                </ul>
+                                <div class="p-button">
+                                    <a href="#" class="p-btn">Buy Startup</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-ptable">
+                        <div class="single-ptable">
+                            <div class="ptable-head">
+                                <h4>Enterprise</h4>
+                                <p>All the basics for starting a new business</p>
+                                <div class="p-price">
+                                    <h2 class="p-amount">$48<span class="p-duration">/mo</span></h2>
+                                </div>
+                            </div>
+                            <div class="ptable-content">
+                                <ul class="ptable-list">
+                                    <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Cras justo odio.</li>
+                                    <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Dapibus ac facilisis in.</li>
+                                    <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Morbi leo risus.</li>
+                                    <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Potenti felis, in cras ligula.</li>
+                                </ul>
+                                <div class="p-button">
+                                    <a href="#" class="p-btn">Buy Enterprise</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="team" class="team-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-team">
+                        <div class="team-title">
+                            <h3>Team</h3>
+                            <h2>Meat our team</h2>
+                            <p>There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered alteration in some form.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-timage">
+                        <div class="single-team">
+                            <div class="t-image">
+                                <img src="team1.jpg" alt="#">
+                                <ul class="t-social">
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="tinfo-head">
+                                <div class="tinfo-box">
+                                    <h4><a href="#">Dahlia Moore</a></h4>
+                                    <span class="designation">Senior Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-timage">
+                        <div class="single-team">
+                            <div class="t-image">
+                                <img src="team2.jpg" alt="#">
+                                <ul class="t-social">
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="tinfo-head">
+                                <div class="tinfo-box">
+                                    <h4><a href="#">Jhone digo</a></h4>
+                                    <span class="designation">Markeitng</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-timage">
+                        <div class="single-team">
+                            <div class="t-image">
+                                <img src="team3.jpg" alt="#">
+                                <ul class="t-social">
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="tinfo-head">
+                                <div class="tinfo-box">
+                                    <h4><a href="#">Zara tingo</a></h4>
+                                    <span class="designation">Web Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-timage">
+                        <div class="single-team">
+                            <div class="t-image">
+                                <img src="team4.jpg" alt="#">
+                                <ul class="t-social">
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="tinfo-head">
+                                <div class="tinfo-box">
+                                    <h4><a href="#">David Zone</a></h4>
+                                    <span class="designation">SEO Expert</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-testimonials">
+                        <div class="testimonials-title">
+                            <h3>Testimonials</h3>
+                            <h2>What people says about us</h2>
+                            <p>There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered alteration in some form.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tslider-head">
+                    <div class="row testimonial-slider">
+                        <div class="col-tslider">
+                            <div class="single-testimonial">
+                                <div class="top-section">
+                                    <img src="testi2.jpg" alt="#">
+                                    <h3>
+                                        Aaron Almaraz
+                                        <span>CEO & Founder at Gearat</span>
+                                    </h3>
+                                    <ul class="t-rating">
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                                <p>Time is the most precious thing you have when bootstrapping. You can't take time to
+                                    ponder on
+                                    design…</p>
+                            </div>
+                        </div>
+                        <div class="col-tslider">
+                            <div class="single-testimonial">
+                                <div class="top-section">
+                                    <img src="testi5.jpg" alt="#">
+                                    <h3>
+                                        Marleah Eagleston
+                                        <span>Founder at Spicenet</span>
+                                    </h3>
+                                    <ul class="t-rating">
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                                <p>Time is the most precious thing you have when bootstrapping. You can't take time to
+                                    ponder on
+                                    design…</p>
+                            </div>
+                        </div>
+                        <div class="col-tslider">
+                            <div class="single-testimonial">
+                                <div class="top-section">
+                                    <img src="testi3.jpg" alt="#">
+                                    <h3>
+                                        Phet Putrie
+                                        <span>Freelancer</span>
+                                    </h3>
+                                    <ul class="t-rating">
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                                <p>Time is the most precious thing you have when bootstrapping. You can't take time to
+                                    ponder on
+                                    design…</p>
+                            </div>
+                        </div>
+                        <div class="col-tslider">
+                            <div class="single-testimonial">
+                                <div class="top-section">
+                                    <img src="testi2.jpg" alt="#">
+                                    <h3>
+                                        Prescott MacCaffery
+                                        <span>Writer</span>
+                                    </h3>
+                                    <ul class="t-rating">
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                                <p>Time is the most precious thing you have when bootstrapping. You can't take time to
+                                    ponder on
+                                    design…</p>
+                            </div>
+                        </div>
+                        <div class="col-tslider">
+                            <div class="single-testimonial">
+                                <div class="top-section">
+                                    <img src="testi4.jpg" alt="#">
+                                    <h3>
+                                        Lara Madrigal
+                                        <span>Marketing Specialist</span>
+                                    </h3>
+                                    <ul class="t-rating">
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                                <p>Time is the most precious thing you have when bootstrapping. You can't take time to
+                                    ponder on
+                                    design…</p>
+                            </div>
+                        </div>
+                        <div class="col-tslider">
+                            <div class="single-testimonial">
+                                <div class="top-section">
+                                    <img src="testi3.jpg" alt="#">
+                                    <h3>
+                                        Waiapi Karaka
+                                        <span>Designer, Freelancer</span>
+                                    </h3>
+                                    <ul class="t-rating">
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                                <p>Time is the most precious thing you have when bootstrapping. You can't take time to
+                                    ponder on
+                                    design…</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-news">
+                        <div class="news-content">
+                            <h5>Join our community</h5>
+                            <h3>Subscribe our Newsletter to get regular updates</h3>
+                            <form action="#" method="get" target="" class="newsletter-form">
+                                <input name="email" type="email" placeholder="Your email address">
+                                <div class="news-button">
+                                    <button type="button" class="news-btn">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-news">
+                        <div class="news-image">
+                            <img src="newsletter-img.png" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blog" class="blog-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-blog">
+                        <div class="blog-title">
+                            <h3>Blogs</h3>
+                            <h2>Our Latest News</h2>
+                            <p>There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered alteration in some form.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-blog2">
+                        <div class="single-blog">
+                            <div class="blog-img">
+                                <a href="#"><img class="thumb" src="blog-grid1.jpg" alt="#"></a>
+                            </div>
+                            <div class="blog-content">
+                                <span class="b-date">Mar 12, 2023</span>
+                                <h4><a href="#" class="bca">Bring to the table win-win survival
+                                        strategies.</a></h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                    has been the standard.</p>
+                                <div class="meta-details">
+                                    <a href="#"><img src="comment1.jpg" alt="#">
+                                        <span class="mds"> By Jonson
+                                            deco</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-blog2">
+                        <div class="single-blog">
+                            <div class="blog-img">
+                                <a href="#"><img class="thumb" src="blog-grid2.jpg" alt="#"></a>
+                            </div>
+                            <div class="blog-content">
+                                <span class="b-date">Feb 25, 2023</span>
+                                <h4><a href="#" class="bca">How To Blow Through Capital At An
+                                        Incredible Rate.</a></h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                    has been the standard.</p>
+                                <div class="meta-details">
+                                    <a href="#"><img src="comment2.jpg" alt="#">
+                                        <span class="mds"> By Jonson
+                                            deco</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-blog2">
+                        <div class="single-blog">
+                            <div class="blog-img">
+                                <a href="#"><img class="thumb" src="blog-grid3.jpg" alt="#"></a>
+                            </div>
+                            <div class="blog-content">
+                                <span class="b-date">Jan 12, 2023</span>
+                                <h4><a href="#" class="bca">Bring to the table win-win survival
+                                        strategies.</a></h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                    has been the standard.</p>
+                                <div class="meta-details">
+                                    <a href="#"><img src="comment3.jpg" alt="#">
+                                        <span class="mds"> By Jonson
+                                            deco</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="call-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-call">
+                        <div class="call-text">
+                            <h2>Ready to dive in?<span>Start your free trial today.</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-call">
+                        <div class="call-button">
+                            <a href="#" class="call-btn">Get started
+                            </a>
+                            <a href="#" class="call-btn2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-footer">
+                            <div class="single-footer">
+                                <div class="f-logo">
+                                    <a href="index.html">
+                                        <img src="white-logo.svg" alt="#">
+                                    </a>
+                                </div>
+                                <p>Making the world a better place through constructing elegant hierarchies.</p>
+                                <ul class="footer-social">
+                                    <li><a class="fsa" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a class="fsa" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a></li>
+                                    <li><a class="fsa" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                                    <li><a class="fsa" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                                    <li><a class="fsa" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-footer2">
+                            <h6>Company</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white">About Us</a></li>
+                                <li><a href="#" class="text-white">Contact</a></li>
+                                <li><a href="#" class="text-white">Service</a></li>
+                                <li><a href="#" class="text-white">Our Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-footer3">
+                            <h6>Support</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white">Login</a></li>
+                                <li><a href="#" class="text-white">Register</a></li>
+                                <li><a href="#" class="text-white">Pricing</a></li>
+                                <li><a href="#" class="text-white">Faq</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-footer4">
+                            <h6>Newsletter</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
+                            <div class="p-1">
+                            <div class="input-group">
+                                <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control">
+                                <div class="input-group-append">
+                                <button id="button-addon1" type="button" class="f-btn text-white"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-copy">
+                            <p class="copyright-text">Designed and Developed by <a href="#" target="_blank">Rainloops Technolabs</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
